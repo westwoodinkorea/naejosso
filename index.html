@@ -25,7 +25,7 @@
     .brand-letter { font-size:36px; font-weight:600; color:#bf6840; line-height:1; }
     .brand-meaning { font-size:11px; color:#bf6840; opacity:0.6; letter-spacing:0.3px; font-weight:400; white-space:nowrap; }
     .hero-desc { font-size:15px; color:#6b5a50; line-height:1.85; margin-bottom:28px; word-break:keep-all; }
-    .hero-free { display:inline-flex; align-items:center; gap:7px; background:rgba(191,104,64,0.06); border:0.5px dashed rgba(191,104,64,0.4); color:#bf6840; font-size:13px; font-weight:500; padding:10px 16px; border-radius:12px; margin-bottom:28px; word-break:keep-all; }
+    .hero-free { display:inline-flex; align-items:center; gap:7px; background:rgba(191,104,64,0.06); border:0.5px dashed rgba(191,104,64,0.4); color:#bf6840; font-size:13px; font-weight:500; padding:10px 16px; border-radius:12px; margin-bottom:28px; }
     .hero-btn { display:block; background:#bf6840; color:#fff; font-size:16px; font-weight:500; padding:18px 24px; border-radius:100px; cursor:pointer; margin:0 auto 14px; width:100%; max-width:300px; text-decoration:none; text-align:center; }
     .hero-note { font-size:12px; color:#b09a8e; }
 
@@ -39,7 +39,7 @@
     .stats { display:grid; grid-template-columns:repeat(3,1fr); border-top:0.5px solid rgba(255,255,255,0.08); padding-top:20px; margin-top:20px; }
     .stat { text-align:center; padding:0 8px; border-right:0.5px solid rgba(255,255,255,0.08); }
     .stat:last-child { border-right:none; }
-    .stat-n { font-size:24px; font-weight:300; color:#bf6840; line-height:1; }
+    .stat-n { font-size:22px; font-weight:300; color:#bf6840; line-height:1; }
     .stat-n sup { font-size:11px; }
     .stat-l { font-size:11px; color:rgba(250,247,243,0.4); margin-top:4px; line-height:1.4; }
 
@@ -50,6 +50,26 @@
     .h2 { font-size:22px; font-weight:300; line-height:1.5; color:#1e1a17; margin-bottom:10px; letter-spacing:-0.3px; word-break:keep-all; }
     .h2 strong { font-weight:600; }
 
+    .why-sub { font-size:14px; color:#7a6a60; line-height:1.75; margin-bottom:28px; word-break:keep-all; }
+    .why-grid { display:grid; grid-template-columns:1fr; gap:10px; }
+    .why-card { background:#fff; border-radius:16px; border:0.5px solid rgba(180,155,135,0.2); padding:20px 18px; display:flex; align-items:flex-start; gap:14px; text-align:left; }
+    .why-icon { font-size:22px; flex-shrink:0; }
+    .why-card h3 { font-size:14px; font-weight:600; color:#1e1a17; margin-bottom:4px; }
+    .why-card p { font-size:13px; color:#7a6a60; line-height:1.7; word-break:keep-all; }
+
+    .chain { display:flex; align-items:center; justify-content:center; margin:32px auto 24px; }
+    .chain-node { display:flex; flex-direction:column; align-items:center; gap:5px; flex-shrink:0; }
+    .chain-dot { width:40px; height:40px; border-radius:50%; background:rgba(191,104,64,0.08); border:0.5px solid rgba(191,104,64,0.25); display:flex; align-items:center; justify-content:center; font-size:15px; }
+    .chain-dot.me { background:#bf6840; border-color:#bf6840; }
+    .chain-dot.you-start { background:rgba(191,104,64,0.08); border:0.5px solid rgba(191,104,64,0.25); }
+    .chain-dot.you-end { background:rgba(191,104,64,0.08); border:0.5px solid rgba(191,104,64,0.25); }
+    .chain-lbl { font-size:10px; color:#a08878; white-space:nowrap; }
+    .chain-lbl.accent { color:#bf6840; font-weight:500; }
+    .chain-line { width:12px; height:0.5px; background:rgba(191,104,64,0.25); margin-bottom:18px; flex-shrink:0; }
+    .chain-quote { font-size:14px; color:#6b5a50; line-height:1.9; word-break:keep-all; }
+    .chain-quote strong { color:#bf6840; font-weight:500; }
+    .chain-title-small { font-size:13px; font-weight:300; color:#7a6a60; margin-bottom:0; word-break:keep-all; }
+
     .who-wrap { background:#fff; border-radius:20px; border:0.5px solid rgba(180,155,135,0.2); padding:24px 20px; }
     .who-top { display:flex; align-items:center; gap:14px; margin-bottom:16px; }
     .who-ava { width:56px; height:56px; border-radius:50%; background:linear-gradient(135deg,#f2c4a4 0%,#bf6840 100%); display:flex; align-items:center; justify-content:center; font-size:22px; flex-shrink:0; }
@@ -59,37 +79,20 @@
     .who-tags { display:flex; flex-wrap:wrap; gap:6px; }
     .who-tag { font-size:11px; color:#7a6050; background:rgba(191,104,64,0.07); border:0.5px solid rgba(191,104,64,0.15); padding:4px 10px; border-radius:100px; }
 
-    .chain { display:flex; align-items:center; justify-content:center; margin:32px auto 24px; }
-    .chain-node { display:flex; flex-direction:column; align-items:center; gap:5px; flex-shrink:0; }
-    .chain-dot { width:40px; height:40px; border-radius:50%; background:rgba(191,104,64,0.08); border:0.5px solid rgba(191,104,64,0.25); display:flex; align-items:center; justify-content:center; font-size:15px; }
-    .chain-dot.me { background:#bf6840; border-color:#bf6840; }
-    .chain-dot.you { background:rgba(191,104,64,0.12); border:1.5px solid #bf6840; }
-    .chain-lbl { font-size:10px; color:#a08878; white-space:nowrap; }
-    .chain-lbl.accent { color:#bf6840; font-weight:500; }
-    .chain-line { width:12px; height:0.5px; background:rgba(191,104,64,0.25); margin-bottom:18px; flex-shrink:0; }
-    .chain-quote { font-size:14px; color:#6b5a50; line-height:1.9; word-break:keep-all; }
-    .chain-quote strong { color:#bf6840; font-weight:500; }
-
-    .why-sub { font-size:14px; color:#7a6a60; line-height:1.75; margin-bottom:28px; word-break:keep-all; }
-    .why-grid { display:grid; grid-template-columns:1fr; gap:10px; }
-    .why-card { background:#fff; border-radius:16px; border:0.5px solid rgba(180,155,135,0.2); padding:20px 18px; display:flex; align-items:flex-start; gap:14px; text-align:left; }
-    .why-icon { font-size:22px; flex-shrink:0; }
-    .why-card h3 { font-size:14px; font-weight:600; color:#1e1a17; margin-bottom:4px; }
-    .why-card p { font-size:13px; color:#7a6a60; line-height:1.7; word-break:keep-all; }
-
     .steps { display:flex; flex-direction:column; gap:0; max-width:360px; margin:0 auto; }
-    .step { display:flex; align-items:flex-start; gap:14px; padding:14px 0; border-bottom:0.5px solid rgba(191,104,64,0.1); }
+    .step { display:flex; align-items:center; gap:14px; padding:14px 0; border-bottom:0.5px solid rgba(191,104,64,0.1); text-align:left; }
     .step:last-child { border-bottom:none; }
     .step-dot { width:40px; height:40px; border-radius:50%; background:#faf7f3; border:0.5px solid rgba(191,104,64,0.25); display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0; }
+    .step-body { flex:1; }
     .step-num { font-size:10px; color:#bf6840; font-weight:500; letter-spacing:1px; text-transform:uppercase; margin-bottom:2px; }
     .step-title { font-size:14px; font-weight:500; color:#1e1a17; margin-bottom:2px; }
-    .step-desc { font-size:12px; color:#a08878; line-height:1.6; }
+    .step-desc { font-size:12px; color:#a08878; line-height:1.5; word-break:keep-all; }
 
     .free-band { background:linear-gradient(135deg,#fdf5ef 0%,#f8ede3 100%); padding:52px 28px; text-align:center; border-top:0.5px solid rgba(191,104,64,0.1); border-bottom:0.5px solid rgba(191,104,64,0.1); }
     .free-big { font-size:11px; letter-spacing:2px; color:#bf6840; text-transform:uppercase; margin-bottom:12px; }
     .free-title { font-size:22px; font-weight:300; color:#1e1a17; margin-bottom:14px; line-height:1.5; word-break:keep-all; }
     .free-title strong { font-weight:600; color:#bf6840; }
-    .free-desc { font-size:14px; color:#7a6a60; line-height:1.85; margin-bottom:24px; word-break:keep-all; }
+    .free-desc { font-size:14px; color:#7a6a60; line-height:1.85; margin-bottom:24px; word-break:keep-all; text-align:left; }
     .free-badge { display:inline-flex; align-items:center; gap:6px; background:#fff; border:0.5px dashed rgba(191,104,64,0.5); color:#bf6840; font-size:13px; font-weight:500; padding:10px 18px; border-radius:12px; }
 
     .faq-wrap { }
@@ -130,19 +133,21 @@
       .results-inner-wrap { display:flex; align-items:center; justify-content:space-between; gap:24px; }
       .stats { display:flex; border-top:none; padding-top:0; margin-top:0; border-left:0.5px solid rgba(255,255,255,0.08); }
       .stat { padding:0 28px; border-right:0.5px solid rgba(255,255,255,0.08); }
-      .stat-n { font-size:30px; }
+      .stat:last-child { border-right:none; }
+      .stat-n { font-size:28px; }
       .section { padding:80px 52px; }
       .h2 { font-size:30px; }
+      .why-grid { grid-template-columns:repeat(3,1fr); }
+      .why-card { flex-direction:column; gap:10px; text-align:center; }
       .who-wrap { display:grid; grid-template-columns:auto 1fr; gap:36px; padding:40px; align-items:start; }
       .who-top { display:none; }
       .who-desktop { display:flex !important; }
-      .why-grid { grid-template-columns:repeat(3,1fr); }
-      .why-card { flex-direction:column; gap:10px; text-align:center; }
       .steps { flex-direction:row; position:relative; max-width:800px; }
       .steps::before { content:''; position:absolute; top:20px; left:calc(10% + 20px); right:calc(10% + 20px); height:0.5px; background:rgba(191,104,64,0.2); }
       .step { flex-direction:column; align-items:center; text-align:center; padding:0 8px; border-bottom:none; gap:10px; flex:1; position:relative; z-index:1; }
       .free-band { padding:64px 52px; }
       .free-title { font-size:34px; }
+      .free-desc { text-align:center; }
       .faq-q { cursor:default; }
       .faq-arrow { display:none; }
       .faq-a { display:block !important; }
@@ -162,7 +167,7 @@
 </nav>
 
 <div class="hero">
-  <div class="hero-eyebrow">🧡 지금은 완전 무료예요</div>
+  <div class="hero-eyebrow">🧡 현재 무료 운영 중</div>
   <p class="hero-title-line">내가 <strong>좋아서 해주는</strong> 소개팅,</p>
   <div class="brand-wrap">
     <div class="brand-char"><span class="brand-letter">내</span><span class="brand-meaning">내가</span></div>
@@ -170,7 +175,7 @@
     <div class="brand-char"><span class="brand-letter">소</span><span class="brand-meaning">소개팅</span></div>
   </div>
   <p class="hero-desc">알고리즘이 아닌 사람이 직접 연결합니다<br>지인의 지인, 그 지인의 지인…<br>세상은 생각보다 좁아요</p>
-  <div class="hero-free">🎉 현재 무료 운영 중 — 언제 유료가 될지 몰라요!</div><br>
+  <div class="hero-free">🎉 현재 무료 운영 중</div><br>
   <a href="https://forms.gle/LpXmzzaPGvSkhv7m7" class="hero-btn">소개팅 신청하기 →</a>
   <p class="hero-note">※ 추천인이 있는 분만 신청 가능합니다</p>
 </div>
@@ -178,21 +183,50 @@
 <div class="results-bar">
   <div class="results-inner-wrap">
     <div>
-      <p class="results-label">베타 운영 실적</p>
+      <p class="results-label">2025 베타 운영 실적</p>
       <p class="results-text">반년 만에 <em>8커플</em>,<br>그 중 한 쌍은 결혼까지 골인 💍</p>
       <div class="results-pill"><span>💌</span><strong>내좋소 1호 웨딩커플</strong><span>탄생!</span></div>
     </div>
     <div class="stats">
-      <div class="stat"><div class="stat-n">8<sup>커플</sup></div><div class="stat-l">매칭 성사</div></div>
       <div class="stat"><div class="stat-n">6<sup>개월</sup></div><div class="stat-l">베타 운영</div></div>
+      <div class="stat"><div class="stat-n">8<sup>커플</sup></div><div class="stat-l">매칭 성사</div></div>
       <div class="stat"><div class="stat-n">1<sup>쌍</sup></div><div class="stat-l">결혼 골인 💍</div></div>
     </div>
   </div>
 </div>
 
+<div class="section section-alt section-center">
+  <p class="eyebrow">내좋소가 다른 이유</p>
+  <h2 class="h2">데이팅앱도 아니고 결혼정보회사도 아닌<br><strong>딱 그 사이</strong></h2>
+  <p class="why-sub">좋은 사람을 만날 수 있는 가장 믿을만한 채널, 내좋소입니다</p>
+  <div class="why-grid">
+    <div class="why-card"><div class="why-icon">🔒</div><div><h3>추천인 필수</h3><p>추천인 없이는 신청 자체가 불가합니다. 신원이 확인된 분들끼리만 만나요.</p></div></div>
+    <div class="why-card"><div class="why-icon">🤝</div><div><h3>사람이 직접</h3><p>알고리즘이 아닌 운영자가 직접 사진, 직업, 나이, 조건 그리고 느낌!을 보고 매칭해요.</p></div></div>
+    <div class="why-card"><div class="why-icon">🎉</div><div><h3>지금은 무료</h3><p>정말 좋아서 주선하는 소개팅이라 지금은 무료입니다. 그렇지만 곧 유료화가 될 수도 있으니 지금 바로 신청하세요!</p></div></div>
+  </div>
+</div>
+
+<div class="section section-center">
+  <p class="eyebrow">지인의 지인 네트워크</p>
+  <p class="chain-title-small">세상의 모든 사람은 6다리면 다 연결돼요</p>
+  <h2 class="h2" style="margin-top:6px;"><strong>그리고 당신의 인연은 4다리면 만날 수 있어요</strong></h2>
+  <div class="chain">
+    <div class="chain-node"><div class="chain-dot you-start">🙂</div><span class="chain-lbl accent">당신</span></div>
+    <div class="chain-line"></div>
+    <div class="chain-node"><div class="chain-dot">👤</div><span class="chain-lbl">지인</span></div>
+    <div class="chain-line"></div>
+    <div class="chain-node"><div class="chain-dot me">🙋</div><span class="chain-lbl">웨스트우드</span></div>
+    <div class="chain-line"></div>
+    <div class="chain-node"><div class="chain-dot">👤</div><span class="chain-lbl">지인</span></div>
+    <div class="chain-line"></div>
+    <div class="chain-node"><div class="chain-dot you-end">💛</div><span class="chain-lbl accent">당신의 인연</span></div>
+  </div>
+  <p class="chain-quote">내좋소는 <strong>지인의 지인 추천 베이스</strong>로만 운영돼요. 신원 모르는 낯선 사람 없이, 어딘가에서 연결된 사람들끼리 만납니다. 세상은 생각보다 좁고, 좋은 사람은 당신 주변에 있어요 🌸</p>
+</div>
+
 <div class="section section-alt">
   <div class="section-center" style="margin-bottom:28px;">
-    <p class="eyebrow">주선자 소개</p>
+    <p class="eyebrow">운영자 소개</p>
     <h2 class="h2">근데 <strong>웨스트우드</strong>가 누구야?</h2>
   </div>
   <div class="who-wrap">
@@ -205,39 +239,11 @@
       <div><p class="who-name">웨스트우드</p><p class="who-role" style="font-size:13px;color:#bf6840;margin-top:3px;">내좋소 운영자 · 진짜 내가 좋아서 🧡</p></div>
     </div>
     <div>
-      <p class="who-bio">연세대 졸업 후 대기업, 외국계 컨설팅, 스타트업을 거치며 커리어 발전과 함께 정말 많은 좋은 사람들을 만나왔어요. 주변에 좋은 분들이 많은데 서로 만나지 못하는 게 아쉬워서 시작했습니다. 본업이 아니라 진짜 좋아서 합니다. 😊 조금 느릴 수 있지만 한 분 한 분 정성을 다해 매칭해드릴게요!</p>
+      <p class="who-bio">연세대 졸업 후, 대기업, 외국계 컨설팅, 스타트업을 거치며 커리어 발전과 함께 정말 많은 좋은 사람들을 만나왔어요. 주변에 좋은 분들이 많은데 서로 만나지 못하는 게 아쉬워서 내좋소를 시작했습니다. 본업이 아니라 진짜 좋아서 합니다 😊 지금까지 개인적인 소개팅 주선으로도 많은 커플을 결혼까지 성사시켜봤어요 💍 이제 내좋소를 통해 여러분의 인연을 찾아드릴게요!</p>
       <div class="who-tags">
         <span class="who-tag">연세대</span><span class="who-tag">대기업</span><span class="who-tag">외국계 컨설팅</span><span class="who-tag">스타트업</span><span class="who-tag">소개팅 성공률 높음</span>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="section section-center">
-  <p class="eyebrow">지인의 지인 네트워크</p>
-  <h2 class="h2">세상은 <strong>6다리</strong>면 다 연결돼요</h2>
-  <div class="chain">
-    <div class="chain-node"><div class="chain-dot me">🙋</div><span class="chain-lbl">웨스트우드</span></div>
-    <div class="chain-line"></div>
-    <div class="chain-node"><div class="chain-dot">👤</div><span class="chain-lbl">지인</span></div>
-    <div class="chain-line"></div>
-    <div class="chain-node"><div class="chain-dot">👤</div><span class="chain-lbl">지인의 지인</span></div>
-    <div class="chain-line"></div>
-    <div class="chain-node"><div class="chain-dot">👤</div><span class="chain-lbl">또 그 지인</span></div>
-    <div class="chain-line"></div>
-    <div class="chain-node"><div class="chain-dot you">💛</div><span class="chain-lbl accent">당신의 인연</span></div>
-  </div>
-  <p class="chain-quote">내좋소는 <strong>지인의 지인 추천 베이스</strong>로만 운영돼요.<br>신원 모르는 낯선 사람 없이, 어딘가에서 연결된 사람들끼리 만납니다.<br>세상은 생각보다 좁고, 좋은 사람은 당신 주변에 있어요 🌸</p>
-</div>
-
-<div class="section section-alt section-center">
-  <p class="eyebrow">내좋소가 다른 이유</p>
-  <h2 class="h2">데이팅앱도 아니고 결혼정보회사도 아닌<br><strong>딱 그 사이</strong></h2>
-  <p class="why-sub">좋은 사람을 만날 수 있는 가장 믿을만한 채널, 내좋소입니다</p>
-  <div class="why-grid">
-    <div class="why-card"><div class="why-icon">🔒</div><div><h3>추천인 필수</h3><p>추천인 없이는 신청 자체가 불가합니다. 신원이 확인된 분들끼리만 만나요.</p></div></div>
-    <div class="why-card"><div class="why-icon">🤝</div><div><h3>사람이 직접</h3><p>알고리즘이 아닌 웨스트우드가 직접 사진, 직업, 나이, 조건을 보고 매칭해요.</p></div></div>
-    <div class="why-card"><div class="why-icon">🎉</div><div><h3>지금은 무료</h3><p>진짜 좋아서 하는 소개팅이라 지금은 무료예요. 언제 유료될지 몰라요 (진심).</p></div></div>
   </div>
 </div>
 
@@ -247,17 +253,18 @@
   <div style="height:28px;"></div>
   <div class="steps">
     <div class="step"><div class="step-dot">📝</div><div class="step-body"><p class="step-num">Step 1</p><p class="step-title">신청서 작성</p><p class="step-desc">본인 정보 + 이상형 + 추천인</p></div></div>
-    <div class="step"><div class="step-dot">💬</div><div class="step-body"><p class="step-num">Step 2</p><p class="step-title">카카오 연락</p><p class="step-desc">명함·사진 수령</p></div></div>
-    <div class="step"><div class="step-dot">🔍</div><div class="step-body"><p class="step-num">Step 3</p><p class="step-title">매칭 후보 선정</p><p class="step-desc">웨스트우드 맞춤 매칭</p></div></div>
-    <div class="step"><div class="step-dot">🤍</div><div class="step-body"><p class="step-num">Step 4</p><p class="step-title">의사 확인</p><p class="step-desc">양측 만남 의향 확인</p></div></div>
-    <div class="step"><div class="step-dot">📱</div><div class="step-body"><p class="step-num">Step 5</p><p class="step-title">연락처 전달</p><p class="step-desc">남성분께 연락처 전달</p></div></div>
+    <div class="step"><div class="step-dot">💬</div><div class="step-body"><p class="step-num">Step 2</p><p class="step-title">카카오톡 연락</p><p class="step-desc">명함·사진 수령</p></div></div>
+    <div class="step"><div class="step-dot">🔍</div><div class="step-body"><p class="step-num">Step 3</p><p class="step-title">매칭 후보 선정</p><p class="step-desc">희망 조건 맞춤 매칭</p></div></div>
+    <div class="step"><div class="step-dot">🤍</div><div class="step-body"><p class="step-num">Step 4</p><p class="step-title">만남 의사 확인</p><p class="step-desc">양측 만남 의향 확인</p></div></div>
+    <div class="step"><div class="step-dot">📱</div><div class="step-body"><p class="step-num">Step 5</p><p class="step-title">연락처 전달</p><p class="step-desc">서로의 연락처 전달</p></div></div>
   </div>
 </div>
 
 <div class="free-band">
   <p class="free-big">지금은 무료</p>
   <h2 class="free-title">진짜입니다.<br><strong>카드 정보 같은 거 없어요.</strong></h2>
-  <p class="free-desc">웨스트우드가 본업 외 시간에 순수하게 좋아서 운영하는 서비스예요. 매칭이 성사되고 커피나 밥을 사주신다면 감사히 받겠습니다 😄 서비스가 커지면 유료화를 고민할 것 같으니 지금 신청하는 게 이득이에요!</p>
+  <p class="free-desc">운영자가 본업 외 개인 시간을 투자해 순수하게 좋아서 운영하는 서비스입니다. 그래서 지금은 무료에요! 향후 서비스가 커지면 유료화를 고민해보려고 해요. 유료가 되기 전에 지금 바로 신청하세요 📝</p>
+  <div style="height:24px;"></div>
   <div class="free-badge">⚡ 무료인 지금 바로 신청하세요!</div>
 </div>
 
@@ -269,12 +276,13 @@
   </div>
   <div class="faq-wrap">
     <p class="faq-cat">🙋 신청 자격</p>
-    <div class="faq-item"><div class="faq-q"><span class="faq-q-dot">Q</span><span class="faq-q-text">웨스트우드와 겹치는 지인이 없어서 추천인이 없다면 가입이 불가한가요?</span><span class="faq-arrow">▼</span></div><div class="faq-a">네. 저와 겹치는 지인이 없어 추천인을 쓸 수 없다면 가입이 어렵습니다 😢 저와 아는 누군가를 꼭 찾아서 가입해주세용 :) 세상이 생각보다 좁으니 한 번 찾아보세요!</div></div>
-    <div class="faq-item"><div class="faq-q"><span class="faq-q-dot">Q</span><span class="faq-q-text">나이 제한이 있나요?</span><span class="faq-arrow">▼</span></div><div class="faq-a">성인이라면 나이 제한은 없습니다! 다만 현재 가장 많은 연령대가 20대 중반~40대 초반이라 이 범위에 해당되시면 매칭 가능성이 더 높아집니다 😊</div></div>
+    <div class="faq-item"><div class="faq-q"><span class="faq-q-dot">Q</span><span class="faq-q-text">웨스트우드와 겹치는 지인이 없어서 추천인이 없다면 가입이 불가한가요?</span><span class="faq-arrow">▼</span></div><div class="faq-a">네. 저와 겹치는 지인이 없어 추천인을 쓸 수 없다면 가입이 어렵습니다 😢 여러 다리를 거치더라도 저와 아는 누군가를 꼭 찾아서 가입해주세요 💛 생각보다 세상이 좁으니 연결고리를 금방 찾아보실 수 있으실 거예요!</div></div>
+    <div class="faq-item"><div class="faq-q"><span class="faq-q-dot">Q</span><span class="faq-q-text">나이 제한이 있나요?</span><span class="faq-arrow">▼</span></div><div class="faq-a">성인이라면 나이 제한은 없습니다! 다만 현재 가장 많은 연령대가 20대 중반~40대 중반이라 이 범위에 해당된다면 매칭 가능성이 더 높아집니다 😊</div></div>
     <div class="faq-item"><div class="faq-q"><span class="faq-q-dot">Q</span><span class="faq-q-text">지역 제한이 있나요?</span><span class="faq-arrow">▼</span></div><div class="faq-a">현재는 서울, 경기 및 수도권에 한하여 신청 가능합니다. 향후 지방에서 신청하시는 분들이 많아지면 지역을 확장해볼게요! 🗺️</div></div>
     <p class="faq-cat">💘 매칭 과정</p>
     <div class="faq-item"><div class="faq-q"><span class="faq-q-dot">Q</span><span class="faq-q-text">가입에서 매칭까지 얼마나 걸리나요?</span><span class="faq-arrow">▼</span></div><div class="faq-a">매칭까지 걸리는 시간은 천차만별입니다 🤔 원하는 조건이 까다롭다면 엄청나게 시간이 걸릴 수도 있고, 어떤 분은 가입하자마자 바로 매칭이 되기도 해요. 본업이 아닌 제가 좋아서 하는 소개팅인만큼 시간이 걸릴 수 있는 점 양해 부탁드리며, 최대한 빠르게 매칭될 수 있도록 최선을 다할게요! 💪</div></div>
     <div class="faq-item"><div class="faq-q"><span class="faq-q-dot">Q</span><span class="faq-q-text">매칭 기준은 무엇인가요?</span><span class="faq-arrow">▼</span></div><div class="faq-a">우선 서로가 원하는 조건에 부합하는지가 가장 중요하고요, 사진·직업·연령 등을 보고 잘 맞을 것 같은 분들을 선별해서 추천드려요 🔍 나름 성공률도 높고 후기 만족도도 높은 편이니 웨스트우드를 믿고 (ㅎㅎ) 매칭이 되면 우선 만나보시는 것을 추천드려요!</div></div>
+    <div class="faq-item"><div class="faq-q"><span class="faq-q-dot">Q</span><span class="faq-q-text">1:1 소개팅만 진행되나요?</span><span class="faq-arrow">▼</span></div><div class="faq-a">1:1 소개팅 주선이 기본이지만, 1:1 소개팅 외에 다대다 모임도 추진해보려 합니다. 한 공간에서 다양한 주제로 여러 명의 회원님들이 만나는 자리를 마련해보려고 하는데요, 희망하시는 분들은 신청서 내에 다대다 모임을 희망한다고 답변해주시면 됩니다. 모임이 진행될 경우, 모임에 대한 정보 및 신청은 인스타그램을 통해 공지될 예정이니 인스타그램을 꼭 팔로우 해주세요 🤍</div></div>
     <div class="faq-item"><div class="faq-q"><span class="faq-q-dot">Q</span><span class="faq-q-text">동시에 여러 명 매칭이 진행되기도 하나요?</span><span class="faq-arrow">▼</span></div><div class="faq-a">아니요! 한 번에 한 명씩만 매칭이 진행됩니다. 소개팅 후 인연이 안 되시면 또 소개를 해드리니 한 명씩 차근차근 진행하시면 됩니다 🌸</div></div>
     <p class="faq-cat">💬 거절 & 후기</p>
     <div class="faq-item"><div class="faq-q"><span class="faq-q-dot">Q</span><span class="faq-q-text">매칭이 됐는데 거절해도 되나요?</span><span class="faq-arrow">▼</span></div><div class="faq-a">네 거절하셔도 됩니다! 양측 모두 수락했을 때만 만남을 주선하는 것이 원칙이에요 🙅 다만, 너무 여러 번 자주 거절하시거나 조건을 다 만족시켜드렸는데도 거절하시면 다음 매칭이 쉽지 않을 수 있습니당… ㅎㅎ 아! 상대방이 거절하셔도 상처받지 마시고 다음 매칭을 기다려주세요 🍀</div></div>
@@ -297,9 +305,9 @@
 <footer class="footer">
   <div class="footer-logo">내<em>좋</em>소 · 내가 좋아서 해주는 소개팅</div>
   <div class="footer-right">
-    <a class="footer-insta" href="https://instagram.com/ilovematching" target="_blank">
+    <a class="footer-insta" href="https://instagram.com/ilovematchmaking" target="_blank">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="rgba(191,104,64,0.8)" stroke-width="1.8"/><circle cx="12" cy="12" r="4.5" stroke="rgba(191,104,64,0.8)" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="rgba(191,104,64,0.8)"/></svg>
-      @ilovematching
+      @ilovematchmaking
     </a>
     <span class="footer-copy">© 2025 내좋소</span>
   </div>
